@@ -3,12 +3,15 @@ import java.util.Scanner;
 import static com.sun.xml.internal.bind.v2.schemagen.Util.equalsIgnoreCase;
 
 public class calculator {
+    public void addition(int num1,int num2) {
+        int result=num1*num2;
+
+        System.out.println("Addition of " + num1 + " and " + num2 + " is" + result);
+    }
     public static <string> void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         double result;
        char customer_response;
-
-
 
         do {
             System.out.println("***********welcome to my minni calculator*********\n1. Press 1 for addition\n2.Press 2 for multiplication\n3.Press 3 for subtraction\n4.Press 4 for divison");
@@ -19,8 +22,7 @@ public class calculator {
             int num2 = scanner.nextInt();
             if (choice == 1) {
 
-                result = num1 + num2;
-                System.out.println("Addition of " + num1 + " and " + num2 + " is" + result);
+
 
             } else if (choice == 2) {
                 result = num1 * num2;
