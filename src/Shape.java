@@ -18,7 +18,7 @@ public class Shape{
 
     }
     public void calculate(int length,int breath){
-        double area_of_rectangle= (length*breath);
+        double area_of_rectangle = (length*breath);
         System.out.println("Area of circle is "+area_of_rectangle);
 
 
