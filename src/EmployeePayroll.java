@@ -39,8 +39,7 @@ public class EmployeePayroll {
 
     }
     public double calNetSalary(){
-        grossSalary = calGrossSalary(double grossSalary);
-         deductions= calDeductions(double deductions);
+
          double netpay = grossSalary  - deductions;
         System.out.println("netpay :"+netpay);
         return netpay;
